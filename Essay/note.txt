@@ -1,0 +1,61 @@
+ Essay
+
+ 1. Apa itu React?
+ 2. Apa keunggulan React?
+ 3. Apa itu SPA pada React?
+ 4. Apa itu state dan props? Apa perbedaannya?
+ 5. Kapan harus menggunakan state dan props? Berikan contoh studi kasus
+ 6. Apa itu state management dan kapan harus menggunakannya?
+ 7. Apa itu ORM/ODM?
+ 8. Apa perbedaan SQL dan NoSQL?
+
+ Jawaban :
+ 1. React adalah sebuah library JavaScript yang digunakan untuk membangun user interface yang interaktif. Library ini dibuat oleh Facebook dan bersifat open source.
+ 2. Keunggulan React :
+    1. Komponen dan Reusabilitas
+     Dengan menggunakan komponen, kita dapat membagi antarmuka menjadi bagian-bagian yang lebih kecil dan terorganisir.
+    2. Virtual DOM
+     ReactJS menggunakan Virtual DOM (Document Object Model) untuk mengoptimalkan performa aplikasi web.
+    3. State Management yang Efektif
+     ReactJS menyediakan cara yang efektif untuk mengelola state (keadaan) dalam aplikasi.
+    4. JSX untuk Kode yang Lebih Mudah Dibaca
+     ReactJS menggunakan JSX, yaitu ekstensi sintaksis yang memungkinkan kita menggabungkan JavaScript dengan HTML dalam satu file.
+    5. Komunitas yang Luas dan Dukungan yang Baik
+     ReactJS memiliki komunitas yang aktif dan dukungan yang luas.
+    6.Ekosistem yang Beragam
+     ReactJS memiliki ekosistem yang kaya dengan berbagai library dan tools tambahan yang dapat digunakan untuk memperluas fungsionalitas aplikasi. Misalnya, Redux, React Router.
+ 3. SPA merupakan singkatan dari Single Page Application, yang merupakan jenis aplikasi web yang dibangun menggunakan kerangka kerja seperti React, Angular, atau Vue.js. Dalam SPA, keseluruhan aplikasi web dimuat hanya sekali, biasanya saat pengguna pertama kali mengakses situs, dan setelah itu hanya konten yang berubah yang dimuat secara dinamis tanpa memuat ulang halaman secara keseluruhan. Ini membuat navigasi antar halaman menjadi lebih cepat dan responsif, karena tidak ada waktu penundaan yang disebabkan oleh memuat ulang halaman secara penuh.
+ 4. State:
+    State adalah objek JavaScript yang dimiliki oleh komponen. Ini digunakan untuk menyimpan data yang berubah seiring waktu dalam suatu komponen.
+    Props:
+    Props adalah objek JavaScript yang tidak dapat diubah yang berisi data yang dilewatkan dari komponen induk ke komponen anak.
+    Perbedaan:
+    State dimiliki dan dikelola oleh komponen itu sendiri, sementara props adalah data yang dilewatkan dari komponen induk ke komponen anak dan bersifat read-only di komponen anak. Dengan menggunakan state dan props bersama-sama, kita dapat membangun aplikasi React yang dinamis dan terstruktur dengan baik.
+ 5. State: Gunakan state saat data dalam suatu komponen perlu berubah seiring waktu atau dalam respons terhadap interaksi pengguna. Misalnya:
+
+    Ketika ingin menyimpan nilai-nilai form input yang berubah oleh pengguna.
+    Ketika ingin menampilkan atau menyembunyikan suatu komponen berdasarkan keadaan tertentu.
+    Ketika ingin menyimpan status aplikasi seperti data yang diambil dari server atau status koneksi internet.
+    Contoh studi kasus:
+    Misalkan membangun aplikasi daftar belanja online. mungkin menggunakan state untuk menyimpan daftar barang belanjaan pengguna, serta informasi seperti jumlah barang, total harga, dan metode pembayaran yang dipilih.
+
+    Props: Gunakan props saat ingin mengirim data dari komponen induk ke komponen anak. Ini berguna saat ingin menggunakan komponen yang sama dengan konfigurasi yang berbeda, atau ketika komponen anak bergantung pada data dari komponen induk. Misalnya:
+
+    Ketika ingin menggunakan komponen yang sama dengan isi yang berbeda dalam beberapa bagian aplikasi.
+    Ketika ingin membuat komponen yang dapat digunakan kembali dengan berbagai konfigurasi.
+    Contoh studi kasus:
+    Dalam aplikasi daftar belanja online yang sama, mungkin memiliki komponen "ItemBelanja" yang menerima properti seperti nama barang, harga, dan jumlah. Komponen induk seperti "KeranjangBelanja" kemudian dapat menggunakan komponen "ItemBelanja" untuk setiap item dalam daftar belanja, dengan meneruskan properti yang sesuai untuk setiap item.
+ 6. State management adalah proses mengelola dan menyimpan data aplikasi dalam suatu tempat yang dapat diakses secara global oleh berbagai komponen dalam aplikasi. Ini penting dalam aplikasi yang kompleks di mana berbagai komponen membutuhkan akses ke data yang sama atau berbagi data di antara satu sama lain. Beberapa alat yang sering digunakan untuk state management dalam aplikasi React termasuk Redux, MobX, dan Context API.
+    Beberapa situasi di mana state management sangat berguna termasuk:
+    Aplikasi dengan banyak komponen yang saling berinteraksi
+    Aplikasi dengan logika bisnis yang kompleks
+    Aplikasi yang membutuhkan caching data
+    Aplikasi real-time atau kolaboratif
+ 7. ORM adalah Object Relational Mapping, pada dasarnya suatu teknik untuk menanyakan atau melakukan operasi CRUD (Create, Read, Update, Delete) pada database, terutama RDBMS (Relational Databases), dengan menggunakan paradigma berorientasi objek .
+    ODM adalah Pemetaan Dokumen Objek . Ini seperti ORM untuk database non-relasional atau database terdistribusi seperti MongoDB, yaitu memetakan model objek dan database NoSQL (database dokumen, database grafik, dll.).
+ 8. Struktur : 
+    NoSQL memiliki struktur data yang lebih fleksibel dan tidak memiliki tabel. Data disimpan dalam dokumen, grafik, atau key-value store. 
+
+    Sedangkan struktur data SQL adalah sistem database relasional. Ini berarti data disimpan dalam bentuk tabel dengan kolom dan baris. Struktur tabel didefinisikan sebelum data masuk.  
+    Bahasa  :
+    NoSQL menggunakan bahasa yang bervariasi tergantung pada jenis NoSQL yang digunakan. Sedangkan bahasa query SQL menggunakan bahasa query SQL standar untuk memanipulasi data.  
